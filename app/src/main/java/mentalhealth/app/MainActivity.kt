@@ -1,10 +1,12 @@
 package mentalhealth.app
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -28,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         signIn()
 
+        ActivityCompat.requestPermissions(this,arrayOf(Manifest.permission.ACTIVITY_RECOGNITION),123)
     }
     private fun signIn() {
         // TODO: If user is logged in, set the userId and userName. Else, log in.
@@ -61,5 +64,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
 }
