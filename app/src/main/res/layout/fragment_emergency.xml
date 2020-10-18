@@ -80,5 +80,26 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hl1" />
 
+    <ImageView
+        android:id="@+id/fred"
+        android:layout_width="111dp"
+        android:layout_height="113dp"
+        android:src="@drawable/fred"
+        app:layout_constraintTop_toBottomOf="@id/hl2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="21dp"
+        android:textColor="#247d40"
+        android:text="Stay Strong!\nWe Will Get Through This"
+        android:id="@+id/greet"
+        app:layout_constraintLeft_toRightOf="@id/fred"
+        app:layout_constraintTop_toTopOf="@id/fred"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

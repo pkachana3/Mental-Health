@@ -13,9 +13,9 @@
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
         android:fontFamily="casual"
-        android:text="Home Page"
+        android:text="Home"
         android:textStyle="bold"
-        android:textSize="45dp"
+        android:textSize="30dp"
         android:textColor="#247d40"
         android:id="@+id/homePageHeader"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -71,7 +71,7 @@
         android:layout_width="111dp"
         android:layout_height="113dp"
         android:src="@drawable/fred"
-        app:layout_constraintBottom_toTopOf="@id/weekly_stats_btn"
+        app:layout_constraintTop_toBottomOf="@id/homePageHeader"
         app:layout_constraintLeft_toLeftOf="@id/weekly_stats_btn" />
 
     <TextView
@@ -84,5 +84,28 @@
         android:id="@+id/greet"
         app:layout_constraintLeft_toRightOf="@id/fred"
         app:layout_constraintTop_toTopOf="@id/fred" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="#09331d"
+        android:text="\nMotivational Quote:"
+        android:id="@+id/quoteHeader"
+        app:layout_constraintLeft_toRightOf="@id/fred"
+        app:layout_constraintTop_toBottomOf="@id/fred"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="18dp"
+        android:textColor="#09331d"
+        android:text="\nJust keep swimming, just keep swimming!"
+        android:id="@+id/quote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quoteHeader" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
