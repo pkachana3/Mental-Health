@@ -24,7 +24,7 @@
 
 
     <Button
-        android:text="Weekly Stats"
+        android:text="Exit"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:id="@+id/weekly_stats_btn"

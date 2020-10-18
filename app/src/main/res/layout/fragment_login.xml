@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:textSize="75dp"
         android:textColor="#FFFFFF"
-        android:text="YOU\nARE\nAMAZING!!!"
+        android:text="You\nAre\nAMAZING!"
         android:textStyle="bold"
         android:id="@+id/greeting"
         app:layout_constraintBottom_toBottomOf="parent"
