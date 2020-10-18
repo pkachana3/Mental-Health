@@ -14,28 +14,37 @@
         android:fontFamily="casual"
         android:text="Let's Talk..."
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="#247d40"
-        android:gravity="left"
+        android:gravity="start"
         android:id="@+id/profileHeader"
-        app:layout_constraintBottom_toTopOf="@+id/greeting"
+        app:layout_constraintBottom_toTopOf="@+id/webView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:textSize="30dp"
-        android:textColor="#247d40"
-        android:textStyle="bold"
-        android:text="ChatBot"
-        android:id="@+id/ChatBotPH"
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="casual"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textColor="#247d40"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="ChatBot"-->
+<!--        android:id="@+id/ChatBotPH"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/profileHeader" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
