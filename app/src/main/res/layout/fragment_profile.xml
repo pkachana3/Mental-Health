@@ -27,29 +27,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="#247d40"
         android:textStyle="bold"
-        android:text="Profile"
+        android:text="How do you rate your mood today?"
         android:id="@+id/ProfilePH"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/fred" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="#247d40"
         android:textStyle="bold"
         android:text="Hello"
         android:id="@+id/profileName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ProfilePH"
+        app:layout_constraintLeft_toRightOf="@id/fred"
+        app:layout_constraintTop_toBottomOf="@id/profileHeader" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:textColor="#247d40"
+        android:textStyle="bold"
+        android:text=""
+        android:id="@+id/feedback"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ProfilePH" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/m3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:textColor="#247d40"
+        android:textStyle="bold"
+        android:text=""
+        android:id="@+id/feedback2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback" />
 
     <Button
         android:id="@+id/signout_btn"
@@ -61,16 +82,69 @@
         android:textColor="#FFFFFF"
         android:textSize="15dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/m1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape3"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ProfilePH"
+        app:layout_constraintRight_toLeftOf="@id/m2" />
+    <Button
+        android:id="@+id/m2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape3"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/m1"
+        app:layout_constraintTop_toBottomOf="@id/ProfilePH"
+        app:layout_constraintRight_toLeftOf="@id/m3"/>
+    <Button
+        android:id="@+id/m3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape3"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/m2"
+        app:layout_constraintTop_toBottomOf="@id/ProfilePH"
+        app:layout_constraintRight_toLeftOf="@id/m4"/>
+    <Button
+        android:id="@+id/m4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape3"
+        android:text="4"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/m3"
+        app:layout_constraintTop_toBottomOf="@id/ProfilePH"
+        app:layout_constraintRight_toLeftOf="@id/m5"/>
+    <Button
+        android:id="@+id/m5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape3"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/m4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ProfilePH"/>
 
     <ImageView
         android:id="@+id/fred"
         android:layout_width="111dp"
         android:layout_height="113dp"
         android:src="@drawable/fred"
-        app:layout_constraintTop_toBottomOf="@id/profileHeader"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/ProfilePH"
+        app:layout_constraintTop_toBottomOf="@id/signout_btn"
         app:layout_constraintLeft_toLeftOf="parent" />
 
 
