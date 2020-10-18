@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private val RC_SIGN_IN = 123
 
     private var userId = ""
-    private var userName = ""
+    private var userName: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         signIn()
 
-        text.text = "Hello $userName, good to see you!"
     }
     private fun signIn() {
         // TODO: If user is logged in, set the userId and userName. Else, log in.
@@ -62,4 +61,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 }

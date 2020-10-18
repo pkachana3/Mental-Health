@@ -1,0 +1,84 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcfade"
+    tools:context=".EmergencyFragment"
+    android:id="@+id/parentLayout">
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Don't be afraid to seek help"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#247d40"
+        android:gravity="left"
+        android:id="@+id/profileHeader"
+        app:layout_constraintBottom_toTopOf="@+id/greeting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#247d40"
+        android:textStyle="bold"
+        android:text="Suicide prevention hotline: 1-800-827-7571\n"
+        android:id="@+id/h-l"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hl0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#247d40"
+        android:textStyle="bold"
+        android:text="Youth crisis hotline: 1-800-448-4663\n"
+        android:id="@+id/hl0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/hl1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#247d40"
+        android:textStyle="bold"
+        android:text="United Way crisis helpline: 1-800-233-HELP\n"
+        android:id="@+id/hl1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#247d40"
+        android:textStyle="bold"
+        android:text="Suicide prevention lifeline chat:\n
+    https://suicidepreventionlifeline.org/chat/\n"
+        android:id="@+id/hl2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hl1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,11 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_homePageFragment"
-            app:destination="@id/homePageFragment" />
+            android:id="@+id/action_loginFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_emergencyFragment"
+            app:destination="@id/emergencyFragment" />
     </fragment>
     <fragment
         android:id="@+id/homePageFragment"
@@ -43,4 +46,18 @@
         android:name="mentalhealth.app.ChatBotFragment"
         android:label="fragment_chat_bot"
         tools:layout="@layout/fragment_chat_bot" />
+    <fragment
+        android:id="@+id/emergencyFragment"
+        android:name="mentalhealth.app.EmergencyFragment"
+        android:label="fragment_emergency"
+        tools:layout="@layout/fragment_emergency" />
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="mentalhealth.app.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
 </navigation>

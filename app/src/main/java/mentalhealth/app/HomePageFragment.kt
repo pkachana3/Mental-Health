@@ -8,18 +8,15 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.fragment_home_page.*
+import kotlinx.android.synthetic.main.fragment_profile.*
 
 
-class HomePageFragment : Fragment(), View.OnClickListener {
+class HomePageFragment : Fragment(R.layout.fragment_home_page), View.OnClickListener {
 
     lateinit var navController: NavController
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_home_page, container, false)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -27,6 +24,9 @@ class HomePageFragment : Fragment(), View.OnClickListener {
         view.findViewById<Button>(R.id.weekly_stats_btn).setOnClickListener(this)
         view.findViewById<Button>(R.id.chatbot_btn).setOnClickListener(this)
         view.findViewById<Button>(R.id.profile_btn).setOnClickListener(this)
+
+        val name = Firebase.auth.currentUser!!.displayName
+        greet.text = "Hello $name,\ngood to see you!"
     }
 
     override fun onClick(v: View?) {
